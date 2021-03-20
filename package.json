@@ -1,6 +1,6 @@
 {
   "name": "node-countlines",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "読み込んだテキストファイルの行数を数えます",
   "main": "countLines.js",
   "scripts": {
