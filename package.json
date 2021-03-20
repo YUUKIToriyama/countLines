@@ -1,7 +1,7 @@
 {
-  "name": "countlines",
+  "name": "node-countlines",
   "version": "1.0.0",
-  "description": "",
+  "description": "読み込んだテキストファイルの行数を数えます",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
