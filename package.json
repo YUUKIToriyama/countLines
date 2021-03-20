@@ -2,11 +2,15 @@
   "name": "node-countlines",
   "version": "1.0.0",
   "description": "読み込んだテキストファイルの行数を数えます",
-  "main": "index.js",
+  "main": "countLines.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YUUKIToriyama/countLines"
+  },
+  "author": "YUUKIToriyama",
   "license": "ISC",
   "dependencies": {
     "split": "^1.0.1"
