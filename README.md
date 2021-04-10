@@ -1,3 +1,5 @@
+![thumbnail](./thumbnail.png)
+
 # countLines
 読み込んだファイルの行数をカウントします
 

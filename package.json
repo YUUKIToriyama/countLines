@@ -4,7 +4,8 @@
   "description": "読み込んだテキストファイルの行数を数えます",
   "main": "countLines.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:thumbnail": "gh-ogp light > thumbnail.png"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "split": "^1.0.1"
+  },
+  "devDependencies": {
+    "@kamataryo/gh-ogp": "^0.0.5"
   }
 }
