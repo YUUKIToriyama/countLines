@@ -1,16 +1,16 @@
 ![thumbnail](./thumbnail.png)
 
-# countLines
+# @toriyama/countLines
 読み込んだファイルの行数をカウントします
 
 # Installation
 ```bash
-npm install --save node-countlines
+npm install --save @toriyama/countlines
 ```
 
 # Usage
 ```javascript
-const countLines = require("node-countlines");
+const countLines = require("@toriyama/countlines");
 countLines(/* path to file */).then(result => {
 	console.log(result);
 })
