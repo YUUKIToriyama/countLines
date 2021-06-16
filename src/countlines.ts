@@ -1,14 +1,12 @@
-/* countLines.js */
+import fs from "fs";
+import split from "split";
 
-const fs = require("fs");
-const split = require("split");
-
-const countLines = (filePath) => {
-	let flagError = false;
-	let lineCount = 0;
+const countLines = (filePath: string): Promise<number> => {
+	let flagError: boolean = false;
+	let lineCount: number = 0;
 	let dataStream = fs.createReadStream(filePath).pipe(split());
 	return new Promise((resolve, reject) => {
-		dataStream.on("data", (line) => {
+		dataStream.on("data", () => {
 			lineCount = lineCount + 1;
 		});
 		dataStream.on("error", (error) => {
@@ -24,5 +22,4 @@ const countLines = (filePath) => {
 		});
 	})
 }
-
-module.exports = countLines;
+export default countLines;
