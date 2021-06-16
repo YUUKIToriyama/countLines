@@ -1,22 +1,27 @@
 {
-  "name": "node-countlines",
-  "version": "1.0.1",
+  "name": "@toriyama/countlines",
+  "version": "1.0.2",
   "description": "読み込んだテキストファイルの行数を数えます",
-  "main": "countLines.js",
+  "main": "dist/countlines.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:thumbnail": "gh-ogp light > thumbnail.png"
+    "clean": "rm -rf dist/*",
+    "build": "npm run clean && tsc",
+    "build:thumbnail": "gh-ogp light > thumbnail.png",
+    "prepublishOnly": "npm run build:thumbnail && npm run build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/YUUKIToriyama/countLines"
   },
-  "author": "YUUKIToriyama",
-  "license": "ISC",
+  "author": "YUUKIToriyama<github@toriyama.dev>",
+  "license": "MIT",
   "dependencies": {
     "split": "^1.0.1"
   },
   "devDependencies": {
-    "@kamataryo/gh-ogp": "^0.0.5"
+    "@kamataryo/gh-ogp": "^0.0.5",
+    "@types/split": "^1.0.0",
+    "typescript": "^4.3.2"
   }
 }
